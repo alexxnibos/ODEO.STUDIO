@@ -1,0 +1,107 @@
+/* Custom styles for both index.html and contact.html */
+
+/* Navbar Blur Effect */
+.navbar-blur {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+/* Navbar Responsiveness */
+@media screen and (max-width: 767px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(238, 224, 208, 0.9);
+        padding: 1rem 0;
+        z-index: 1000;
+    }
+    .nav-link {
+        padding: 0.5rem 1rem;
+        display: block;
+    }
+}
+
+/* Main Content Background */
+.main-content {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Card Images */
+.card img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* Button Hover Effects */
+#btn1 button,
+#btn2 button,
+#btn3 button,
+#btn4 button {
+    transition: all 0.3s ease;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Contact Page Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+main {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(248, 232, 217, 0.9));
+}
+
+/* Responsiveness for Contact Page */
+@media (max-width: 640px) {
+    main {
+        padding: 1.5rem; /* p-6 */
+    }
+    main img {
+        width: 8rem; /* w-32 */
+        height: 8rem; /* h-32 */
+    }
+    main .btn {
+        padding: 0.5rem 1rem; /* py-2 px-4 */
+        font-size: 0.875rem; /* text-sm */
+    }
+    main h1 {
+        font-size: 1.5rem; /* text-2xl */
+    }
+    main h2 {
+        font-size: 1.125rem; /* text-lg */
+    }
+}
+
+/* Responsiveness for Index Page */
+@media (max-width: 640px) {
+    .main-content h1 {
+        font-size: 2rem; /* text-4xl */
+    }
+    .main-content p {
+        font-size: 0.875rem; /* text-sm */
+    }
+    .main-content button {
+        padding: 0.5rem 1.5rem; /* py-2 px-6 */
+        font-size: 0.875rem; /* text-sm */
+    }
+}

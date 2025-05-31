@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture - Odeo Studio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Boxicons CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pt-16 sm:pt-20">
+    <!-- Navbar Top -->
+    <header class="bg-white shadow-sm py-4 fixed top-0 w-full z-50">
+        <div class="container mx-auto flex items-center justify-between px-4">
+            <!-- Social Links -->
+            <div class="flex space-x-3">
+                <a href="#" class="text-gray-600 hover:text-gray-800 transition"><img src="./image/twitter.png" alt="Twitter" class="w-5 h-5 sm:w-6 sm:h-6"></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800 transition"><img src="./image/facebook.png" alt="Facebook" class="w-5 h-5 sm:w-6 sm:h-6"></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800 transition"><img src="./image/google-plus.png" alt="Google Plus" class="w-5 h-5 sm:w-6 sm:h-6"></a>
+            </div>
+            <!-- Logo -->
+            <div>
+                <h3 class="text-xl sm:text-2xl font-bold text-gray-800">ODEO STUDIO</h3>
+            </div>
+            <!-- Icons -->
+            <div class="flex space-x-3">
+                <a href="#" class="text-gray-600 hover:text-gray-800 transition"><img src="./image/search.png" alt="Search" class="w-4 h-4 sm:w-5 sm:h-5"></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800 transition"><img src="./image/heart.png" alt="Wishlist" class="w-4 h-4 sm:w-5 sm:h-5"></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800 transition"><img src="./image/shopping-cart.png" alt="Cart" class="w-5 h-5 sm:w-6 sm:h-6"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar Links (Sticky) -->
+    <nav id="navbar-color" class="navbar navbar-expand-lg navbar-blur fixed top-16 sm:top-20 w-full z-40" style="background-color: rgba(238, 224, 208, 0.8);">
+        <div class="container mx-auto px-4">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <img src="./image/menu.png" alt="Menu" class="w-6 h-6">
+            </button>
+            <div class="collapse navbar-collapse justify-center" id="collapsibleNavbar">
+                <ul class="navbar-nav flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+                    <li class="nav-item"><a href="#home" class="nav-link text-gray-800 font-semibold hover:text-green-600 transition py-2 px-2">Home</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link text-gray-800 font-semibold hover:text-green-600 transition py-2 px-2">Services</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link text-gray-800 font-semibold hover:text-green-600 transition py-2 px-2">Product</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link text-gray-800 font-semibold hover:text-green-600 transition py-2 px-2">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-gray-800 font-semibold hover:text-green-600 transition py-2 px-2">Brands</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link text-gray-800 font-semibold hover:text-green-600 transition py-2 px-2">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section id="home" class="main-content bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-start" style="background-image: url('./image/background.png');">
+        <div class="container mx-auto px-4">
+            <div class="content max-w-lg">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">Make Your Home</h1>
+                <p class="text-white text-base sm:text-lg mt-4">We bring elegance and warmth into your home with timeless designs and quality furniture crafted to fit your lifestyle.</p>
+                <div id="btn1" class="mt-6">
+                    <button onclick="window.location.href='https://wa.me/62881037432050?text=Halo,%20saya%20mau%20belanja%20sekarang!'" class="bg-transparent border border-white text-white font-semibold py-2 px-6 rounded hover:bg-green-600 hover:border-green-600 transition">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-12 sm:py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-8 sm:mb-12">Services We Offer</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Service Card 1 -->
+                <div class="card bg-transparent overflow-hidden hover:shadow-xl transition">
+                    <img src="./image/c1.png" alt="Exterior" class="w-full h-48 sm:h-72 object-cover">
+                    <div class="p-4 bg-white">
+                        <h5 class="text-lg sm:text-xl font-semibold text-center text-gray-800">Exterior</h5>
+                        <p class="text-gray-600 text-sm sm:text-base text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text-center mt-4">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="card bg-transparent overflow-hidden hover:shadow-xl transition">
+                    <img src="./image/c2.png" alt="Interior" class="w-full h-48 sm:h-72 object-cover">
+                    <div class="p-4 bg-white">
+                        <h5 class="text-lg sm:text-xl font-semibold text-center text-gray-800">Interior</h5>
+                        <p class="text-gray-600 text-sm sm:text-base text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text-center mt-4">
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="card bg-transparent overflow-hidden hover:shadow-xl transition">
+                    <img src="./image/c3.png" alt="KitchenSet" class="w-full h-48 sm:h-72 object-cover">
+                    <div class="p-4 bg-white">
+                        <h5 class="text-lg sm:text-xl font-semibold text-center text-gray-800">KitchenSet</h5>
+                        <p class="text-gray-600 text-sm sm:text-base text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text-center mt-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Card2 Section -->
+    <section class="py-12 sm:py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Card 1 -->
+                <div id="tpc" class="card relative bg-transparent overflow-hidden hover:-translate-y-2 transition-transform duration-300">
+                    <img src="./image/ch.png" alt="Best Chair" class="w-full h-48 sm:h-72 object-cover">
+                    <div class="card-img-overlay absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white">
+                        <h4 class="text-lg sm:text-xl font-semibold">Best Chair</h4>
+                        <p class="text-xs sm:text-sm mt-2">Lorem ipsum dolor.</p>
+                        <div class="mt-4">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div id="tpc" class="card relative bg-transparent overflow-hidden hover:-translate-y-2 transition-transform duration-300">
+                    <img src="./image/sf.png" alt="Sofa" class="w-full h-48 sm:h-72 object-cover">
+                    <div class="card-img-overlay absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white">
+                        <h4 class="text-lg sm:text-xl font-semibold">Sofa</h4>
+                        <p class="text-xs sm:text-sm mt-2">Lorem ipsum dolor.</p>
+                        <div class="mt-4">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div id="tpc" class="card relative bg-transparent overflow-hidden hover:-translate-y-2 transition-transform duration-300">
+                    <img src="./image/work desk.png" alt="Work Desk" class="w-full h-48 sm:h-72 object-cover">
+                    <div class="card-img-overlay absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white">
+                        <h4 class="text-lg sm:text-xl font-semibold">Work Desk</h4>
+                        <p class="text-xs sm:text-sm mt-2">Lorem ipsum dolor.</p>
+                        <div class="mt-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Products Section -->
+    <section id="products" class="py-12 sm:py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-8 sm:mb-12">Trending Products</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Product 1 -->
+                <div id="c" class="card bg-transparent overflow-hidden hover:shadow-xl transition">
+                    <img src="./image/card1.png" alt="Headboard, Side table" class="w-full h-40 sm:h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="text-base sm:text-lg font-semibold text-center text-gray-800">Headboard, Side table</h3>
+                        <p class="text-gray-600 text-sm sm:text-base text-center font-bold mt-2"></p>
+                        <div class="text-center mt-4">
+                            <button onclick="window.location.href='https://wa.me/62881037432050?text=Halo,%20saya%20mau%20belanja%20sekarang!'" class="bg-transparent border border-gray-800 text-gray-800 font-semibold py-2 px-4 rounded hover:bg-[#eee0d0] transition">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div id="c" class="card bg-transparent overflow-hidden hover:shadow-xl transition">
+                    <img src="./image/card2.png" alt="Wardrobe KitchenSet" class="w-full h-40 sm:h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="text-base sm:text-lg font-semibold text-center text-gray-800">Wardrobe KitchenSet</h3>
+                        <p class="text-gray-600 text-sm sm:text-base text-center font-bold mt-2"></p>
+                        <div class="text-center mt-4">
+                            <button onclick="window.location.href='https://wa.me/62881037432050?text=Halo,%20saya%20mau%20belanja%20sekarang!'" class="bg-transparent border border-gray-800 text-gray-800 font-semibold py-2 px-4 rounded hover:bg-[#eee0d0] transition">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div id="c" class="card bg-transparent overflow-hidden hover:shadow-xl transition">
+                    <img src="./image/card3.png" alt="Bathroom Wall Shelf" class="w-full h-40 sm:h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="text-base sm:text-lg font-semibold text-center text-gray-800">Bathroom Wall Shelf</h3>
+                        <p class="text-gray-600 text-sm sm:text-base text-center font-bold mt-2"></p>
+                        <div class="text-center mt-4">
+                            <button onclick="window.location.href='https://wa.me/62881037432050?text=Halo,%20saya%20mau%20belanja%20sekarang!'"class="bg-transparent border border-gray-800 text-gray-800 font-semibold py-2 px-4 rounded hover:bg-[#eee0d0] transition">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div id="c" class="card bg-transparent overflow-hidden hover:shadow-xl transition">
+                    <img src="./image/card4.png" alt="Wastaffel Cabinet" class="w-full h-40 sm:h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="text-base sm:text-lg font-semibold text-center text-gray-800">Wastaffel Cabinet</h3>
+                        <p class="text-gray-600 text-sm sm:text-base text-center font-bold mt-2"></p>
+                        <div class="text-center mt-4">
+                            <button onclick="window.location.href='https://wa.me/62881037432050?text=Halo,%20saya%20mau%20belanja%20sekarang!'"class="bg-transparent border border-gray-800 text-gray-800 font-semibold py-2 px-4 rounded hover:bg-[#eee0d0] transition">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div id="c" class="card bg-transparent overflow-hidden hover:shadow-xl transition">
+                    <img src="./image/card5.png" alt="Backdrop Tv" class="w-full h-40 sm:h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="text-base sm:text-lg font-semibold text-center text-gray-800">Backdrop Tv</h3>
+                        <p class="text-gray-600 text-sm sm:text-base text-center font-bold mt-2"></p>
+                        <div class="text-center mt-4">
+                            <button onclick="window.location.href='https://wa.me/62881037432050?text=Halo,%20saya%20mau%20belanja%20sekarang!'"class="bg-transparent border border-gray-800 text-gray-800 font-semibold py-2 px-4 rounded hover:bg-[#eee0d0] transition">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div id="c" class="card bg-transparent overflow-hidden hover:shadow-xl transition">
+                    <img src="./image/card6.png" alt="Bar Table" class="w-full h-40 sm:h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="text-base sm:text-lg font-semibold text-center text-gray-800">Bar Table</h3>
+                        <p class="text-gray-600 text-sm sm:text-base text-center font-bold mt-2"></p>
+                        <div class="text-center mt-4">
+                            <button onclick="window.location.href='https://wa.me/62881037432050?text=Halo,%20saya%20mau%20belanja%20sekarang!'"class="bg-transparent border border-gray-800 text-gray-800 font-semibold py-2 px-4 rounded hover:bg-[#eee0d0] transition">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div id="c" class="card bg-transparent overflow-hidden hover:shadow-xl transition">
+                    <img src="./image/card7.png" alt="Bed Base" class="w-full h-40 sm:h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="text-base sm:text-lg font-semibold text-center text-gray-800">Bed Base</h3>
+                        <p class="text-gray-600 text-sm sm:text-base text-center font-bold mt-2"></p>
+                        <div class="text-center mt-4">
+                            <button onclick="window.location.href='https://wa.me/62881037432050?text=Halo,%20saya%20mau%20belanja%20sekarang!'"class="bg-transparent border border-gray-800 text-gray-800 font-semibold py-2 px-4 rounded hover:bg-[#eee0d0] transition">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div id="c" class="card bg-transparent overflow-hidden hover:shadow-xl transition">
+                    <img src="./image/card8.png" alt="Kitchen Set" class="w-full h-40 sm:h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="text-base sm:text-lg font-semibold text-center text-gray-800">Kitchen Set</h3>
+                        <p class="text-gray-600 text-sm sm:text-base text-center font-bold mt-2"></p>
+                        <div class="text-center mt-4">
+                            <button onclick="window.location.href='https://wa.me/62881037432050?text=Halo,%20saya%20mau%20belanja%20sekarang!'"class="bg-transparent border border-gray-800 text-gray-800 font-semibold py-2 px-4 rounded hover:bg-[#eee0d0] transition">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 sm:py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-8 sm:mb-12">About</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div class="card">
+                    <img src="./image/about.png" alt="About" class="w-full h-auto rounded-lg">
+                </div>
+                <div>
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed">At Odeo.Studio, we believe that your home should be a reflection of who you are. Our mission is to create spaces that are both beautiful and functional — spaces that feel uniquely yours."
+
+"With a passion for detail and a commitment to quality, we offer modern furniture and interior design solutions tailored to your needs. Whether you’re refreshing a single room or designing your dream home, we’re here to bring your vision to life.</p>
+                    <a href="https://www.instagram.com/aksaraarchitecture?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                         <button class="bg-transparent border border-gray-800 text-gray-800 font-semibold py-2 px-4 rounded hover:bg-[#eee0d0] transition">
+                             Read More...
+                         </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-black text-white py-8 sm:py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-2xl sm:text-3xl font-bold">ODEO.STUDIO</h1>
+            <p class="mt-4 text-gray-400 text-sm sm:text-base">Kami mengubah ide menjadi karya nyata</p>
+            <div class="flex justify-center space-x-4 sm:space-x-6 mt-6">
+                <a href="#" class="text-[#eee0d0] hover:text-white transition"><i class="bx bxl-twitter text-2xl sm:text-3xl"></i></a>
+                <a href="#" class="text-[#eee0d0] hover:text-white transition"><i class="bx bxl-facebook text-2xl sm:text-3xl"></i></a>
+                <a href="#" class="text-[#eee0d0] hover:text-white transition"><i class="bx bxl-google text-2xl sm:text-3xl"></i></a>
+                <a href="#" class="text-[#eee0d0] hover:text-white transition"><i class="bx bxl-skype text-2xl sm:text-3xl"></i></a>
+                <a href="#" class="text-[#eee0d0] hover:text-white transition"><i class="bx bxl-instagram text-2xl sm:text-3xl"></i></a>
+            </div>
+            <div class="copyright mt-6 text-sm sm:text-base">
+                © Copyright <strong>Furniture</strong>. All Rights Reserved
+            </div>
+            <div class="credite mt-2 text-sm sm:text-base">
+                Designed By <a href="https://www.instagram.com/allekxx_/" class="text-[#eee0d0] hover:underline">allekxx</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
